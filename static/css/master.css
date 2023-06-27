@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-image: url('../images/1638744.jpg');
+    background-color: #0c7b93;
+    background-size: cover;
+    height: 100vh;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.header {
+    height: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    background-color: #333333bd;
+    color: #fff;
+}
+.main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    background-image: linear-gradient(to bottom, #0c7b93a1 55%, transparent 50%);
+}
+.main h1{
+    font-size: 40px;
+    margin: 10px 0px;
+}
+.main .container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 50px;
+    width: 1200px;
+}
+.main .container .game {
+    margin-top: -15px;
+    background-color: #0c7b93a1;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main .container .game h2 {
+    font-size: 35px;
+}
+.main .container .game a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.main .container .game div{
+    position: relative;
+    background-color: #fff;
+    color: #333;
+    width: 400px;
+    padding: 15px;
+    margin: 25px 0px;
+    border-radius: 10px;
+    font-size: 30px;
+}
+.main .container .game div::before{
+    content: "";
+    height: 100%;
+    width: 10px;
+    position: absolute;
+    background-color: #00abcc;
+    left: 0px;
+    top: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.main .container .students {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 200px;
+    color: #fff;
+}
+.main .container .students img{
+    border-radius: 10px;
+    transform: translateY(10px);
+}
+.main .container .students .names{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main .container .students .names h2{
+    font-size: 35px;
+    margin: 0px;
+}
+.main .container .students .names p{
+    position: relative;
+    font-size: 30px;
+    margin: 5px 0px;
+    width: 400px;
+    padding: 10px;
+    background-color: #fff;
+    color: #0c7b93;
+    border-radius: 10px;
+}
+.main .container .students .names p::before{
+    content: "";
+    width: 5px;
+    height: 75%;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    position: absolute;
+    top: -5px;
+    right: 12px;
+    background-color: #00abcc;
+    transform: rotate(-45deg);
+}
+
