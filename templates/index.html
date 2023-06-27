@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel='stylesheet' href='{% static "css/master.css" %}' >
+    <link rel='stylesheet' href='{% static "css/normalize.css" %}' >
+</head>
+<body>
+    <div class='header'>
+        <p>Train Brains</p>
+    </div>
+    <div class='main'>
+        <h1>Hello There</h1>
+        <div class='container'>
+            <div class='game'>
+                <h2>Start Game From Here</h2>
+                <div><a href='{% url "first"%}'>Normal Alpha Algorithm<a></div>
+                <div><a href='{% url "second" %}'>Best Alpha Algorithm<a></div>
+            </div>
+            <div class='students'>
+                <img src = "{% static 'images/home.png'%}">
+                <div class='names'>
+                    <h2>Made By: </h2>
+                    <p>name: aisha_159220</p>
+                    <p>name: alaiham_139944</p>
+                    <p>name: omar_167897</p>
+                    <p>name: ahmad_153703</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
